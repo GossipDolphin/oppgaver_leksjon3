@@ -1,0 +1,308 @@
+main {
+    margin: 0 auto;
+    left: 10%;
+    right: 10%;
+    position: absolute;
+}
+
+.topHeader {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 6px 10px #00000019;
+    opacity: 1;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+}
+
+.topHeader>* {
+    text-align: center;
+    margin: 10px;
+}
+
+.hiofTopbanner {
+    font: normal normal 900 20px/27px "Avenir Next";
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+}
+
+.userTopBanner {
+    font: normal normal medium 20px/27px Avenir Next;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+}
+
+.todoButtonSection {
+    border: 1px solid #333333;
+    opacity: 1;
+    margin-top: 4%;
+    margin-left: 10px;
+    width: 183px;
+    height: 51px;
+    box-shadow: 0px 8px 16px #00000029;
+}
+
+.todoButtonSection:hover {
+    background: #f5f5f5;
+    box-shadow: 0px 12px 16px #00000029;
+    cursor: pointer;
+}
+
+.todoButtonText {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 4%;
+    letter-spacing: 0px;
+    color: #2D2F39;
+    opacity: 1;
+}
+
+.todoNotesSection {
+    margin-top: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 400px;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.todoNotesSection>* {
+    width: 400px;
+    height: 250px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 8px 16px #5DD3D829;
+    border-radius: 8px;
+    opacity: 1;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    margin: 10px;
+}
+
+.todoNotesSection>*>h2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.todoNotesSection>*>p {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-left: 25px;
+}
+
+.todoNotesSection>*>.btnDelete {
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: 30px;
+    margin-left: 25px;
+    background: #56D4C2 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+    border: none;
+    height: 30px;
+    width: 100px;
+    color: #FFFFFF;
+}
+
+.todoNotesSection>*>.btnDelete:hover {
+    background: #49b6a5 0% 0% no-repeat padding-box;
+    cursor: pointer;
+    box-shadow: 0px 8px 16px #00000029;
+}
+
+.todoNotesSection>*>.btnComplete {
+    grid-row-start: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin-top: 30px;
+    background: #EF3340 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+    border: none;
+    height: 40px;
+    color: #FFFFFF;
+    height: 30px;
+    width: 100px;
+}
+
+.todoNotesSection>*>.btnComplete:hover {
+    background: #c02a34 0% 0% no-repeat padding-box;
+    cursor: pointer;
+    box-shadow: 0px 8px 16px #00000029;
+}
+
+.completedTodosSection {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    margin-top: 50px;
+}
+
+.completedTodosSection>h2 {
+    font: normal normal bold 16px/22px Avenir Next;
+    letter-spacing: 0px;
+    color: #333333;
+}
+
+.completedTodosSection>label {
+    opacity: 0.5;
+}
+
+.completedTodosSection>h2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.dateCheckboxSection {
+    margin-top: 25px;
+}
+
+.dateCheckboxSection>* {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    float: right;
+}
+
+.completedTodosHeaderSection {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    text-align: left;
+    background: #E6E6E6 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.completedTodosListSection {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    list-style: none;
+    padding: 0;
+    height: 144px;
+    overflow: auto;
+    white-space: nowrap;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.completedTodosListSection>li {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    text-align: left;
+    font: normal normal normal 14px/19px Avenir Next;
+    letter-spacing: 0px;
+    color: #8B8B8B;
+    opacity: 1;
+    border-style: none none solid none;
+    border-width: 1px;
+}
+
+.completedTodosListSection>li>p:first-child, .completedTodosHeaderSection>h4:first-child {
+    margin-left: 25px;
+}
+
+.overLay {
+    z-index: 1;
+    position: relative;
+    width: 97vw;
+    height: 93vh;
+    background: #D5D5D5 0% 0% no-repeat padding-box;
+    opacity: 0.7;
+    margin: 0 auto;
+    visibility: collapse;
+}
+
+.createTodoSection {
+    z-index: 2;
+    position: absolute;
+    align-self: unset;
+    width: 350px;
+    height: 400px;
+    background: #FFFFFF;
+    margin: 10% auto;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 8px 16px #5DD3D829;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 15% 85%;
+    visibility: collapse;
+}
+
+.createTodoHeaderSection {
+    display: flex;
+    justify-content: space-between;
+    border: solid rgba(0, 0, 0, 0.1);
+    border-width: 0 0 2px 0;
+}
+
+.createTodoHeaderSection>p:first-child {
+    margin: 22px 15px 15px 15px;
+    font: normal normal bold 14px Lato;
+    letter-spacing: 0px;
+    color: #333333;
+}
+
+.createTodoHeaderSection>p:last-child {
+    margin-right: 15px;
+    margin-top: 6px;
+    margin: 11px 15px 0 0;
+    font-size: 24px;
+    opacity: 0.5;
+}
+
+.createTodoHeaderSection>p:last-child:hover {
+    opacity: 1;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.createTodoMainSection>form {
+    display: grid;
+    margin: 0 35px 0 35px;
+}
+
+.createTodoMainSection>form>p {
+    margin-top: 15px;
+    margin-bottom: 2px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.createTodoMainSection>form>p:first-child {
+    margin-top: 33px;
+}
+
+.createTodoMainSection>form>button {
+    margin-top: 25px;
+    height: 35px;
+    background: #56D4C2 0% 0% no-repeat padding-box;
+    opacity: 1;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 3px;
+}
+
+.createTodoMainSection>form>button:hover {
+    background: #3a8f82 0% 0% no-repeat padding-box;
+    cursor: pointer;
+}
+
+.createTodoMainSection>form>textarea {
+    border-radius: 5px;
+    font-size: 15px;
+}

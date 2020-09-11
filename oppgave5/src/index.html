@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link href="./main.scss" rel="stylesheet">-->
+    <script src="bundle.js"></script>
+    <title>Todo</title>
+</head>
+
+<body>
+    <header class="topHeader">
+        <h2 class="hiofTopBanner">HIOF</h2>
+        <h2 class="userTopBanner">User user</h2>
+    </header>
+
+    <main>
+        <section class="todoButtonSection" id="todoButtonSectionID">
+            <p class="todoButtonText">+ Todo</p>
+        </section>
+
+        <section class="todoNotesSection" id="todoNotesSectionID">
+        </section>
+
+        <section class="completedTodosSection">
+            <h2>Completed todos</h2>
+            <section class="dateCheckboxSection">
+                <label for="date">Filter by date</label>
+                <input type="checkbox" id="dateCheckBox" name="date" value="date">
+            </section>
+            <section class="completedTodosHeaderSection">
+                <h4>Title</h4>
+                <h4>Author</h4>
+                <h4>Description</h4>
+                <h4>Completed date</h4>
+                </li>
+            </section>
+        </section>
+        <ul class="completedTodosListSection" id="completedTodosListSectionID"></ul>
+    </main>
+
+    <section class="createTodoSection" id="createTodoSectionID">
+        <section class="createTodoHeaderSection">
+            <p>New Todo</p>
+            <p id="closeFormCrossID">&#10005;</p>
+        </section>
+        <section class="createTodoMainSection">
+            <form id="todoNoteFormID">
+                <p>Title</p>
+                <textarea placeholder="Todo title" required id="todoTitleTextAreaID"></textarea>
+                <p id="formDescriptionHeaderID">Description</p>
+                <textarea maxlength="30" required placeholder="Lorem ipsum dollare sitane" id="descriptionTextAreaID"></textarea>
+                <p>Author</p>
+                <textarea placeholder="Author author" required id="authorTextAreaID"></textarea>
+                <button id="createNoteID">Create</button>
+            </form>
+        </section>
+    </section>
+    <section class="overLay" id="overLayID"></section>
+</body>
+</html>
